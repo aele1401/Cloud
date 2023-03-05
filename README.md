@@ -6,4 +6,4 @@ This repository contains my Cloud Security project which features an automated E
 ![Diagram](https://github.com/aele1401/Cloud/blob/master/Multicloud/Images/solution_architecture.png)
 
 ### Cloud Security
-![Diagram](https://github.com/aele1401/Cloud-Security/blob/main/ELK/Diagrams/ELK_NET_Diagram.PNG)
+![Diagram](https://github.com/aele1401/Cloud/blob/master/ELK/Diagrams/ELK_NET_Diagram.PNG)
