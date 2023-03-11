@@ -1,4 +1,4 @@
-# Luxxy Covid Testing System
+# Luxxy COVID-19 Testing System
 
 This project is a migration and deployment of a covid testing system using infrastructure as code to create and provision S3 buckets, SQL cloud instances, clusters, and kubernetes to deploy the infrastructure.
 - Mission #1 - Setup and configuration of cloud instances
@@ -23,7 +23,7 @@ This project is a migration and deployment of a covid testing system using infra
 ![Diagram](https://github.com/aele1401/Cloud/blob/master/Multicloud/Images/users.png)
 
 - Obtain and download access key for created user and mission1 files
-- GCP Console:
+- **GCP Console:**
     * Upload access keys and mission 1 files into GCP Cloud Shell
     * Set all applicable files in mission1 directory as executables
         - `chmod +x *.sh`
@@ -53,7 +53,7 @@ This project is a migration and deployment of a covid testing system using infra
 
 ## Mission #2: IAM & Cluster Deployment
 
-- AWS:
+- **AWS:**
     * Access AWS console and go to *"IAM service"*
     * In *"Access Management,"* create a new programmatic user named *" luxxy-covid-testing-system-en-app1"*
         - Set permissions for user
@@ -64,7 +64,7 @@ This project is a migration and deployment of a covid testing system using infra
 
 ![Diagram](https://github.com/aele1401/Cloud/blob/master/Multicloud/Images/users.png)
 
-- GCP:
+- **GCP:**
     * Navigate to *"Cloud SQL"* instance and create new user
     * Connect to Google Cloud Shell
     * Download and unzip Mission2 files
@@ -96,10 +96,10 @@ This project is a migration and deployment of a covid testing system using infra
 ## Mission #3: Data Migration
 
 ### GCP Database Migration
-- Connect to Google Cloud Shell
+- Connect to **Google Cloud Shell**
 - Download dump
     * `wget https://tcb-public-events.s3.amazonaws.com/icp/mission3.zip`
-- Connect to Cloud SQL database instance
+- Connect to **Cloud SQL database instance**
     * `mysql --host=<public_ip_address> --port=3306 -u app -p`
 - Import dump on Cloud SQL
     * `use dbcovidtesting;`
@@ -109,7 +109,7 @@ This project is a migration and deployment of a covid testing system using infra
 
 ### AWS - PDF File Migration
 
-- Connect to AWS Cloud Shell
+- Connect to **AWS Cloud Shell**
 - Download PDF files
     * `mkdir mission3_en`
     * `cd mission3_en`
@@ -127,7 +127,7 @@ After application testing is complete and successful deployment of system, empty
 
 ### Deleting Multicloud Resources
 
-- Access AWS console and S3 service
+- **Access AWS console and S3 service**
 - Select and empty bucket
    * Confirm emptying contents in bucket
 - Open *"tcb_gcp_database.tf"* file under *"mission1"* directory using Google Editor
