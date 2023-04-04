@@ -1,6 +1,6 @@
 # Luxxy COVID-19 Testing System
 
-This project is a migration and deployment of a covid testing system using infrastructure as code to create and provision S3 buckets, SQL cloud instances, clusters, and kubernetes to deploy the infrastructure.
+This project is a migration and deployment of a COVID testing system using infrastructure as code to create and provision S3 buckets, SQL cloud instances, clusters, and kubernetes to deploy the infrastructure.
 - Mission #1 - Setup and configuration of cloud instances
 - Mission #2 - IAM and cluster deployment
 - Mission #3 - Data migration
@@ -118,6 +118,8 @@ This project is a migration and deployment of a covid testing system using infra
 - Synch PDF files with S3 COVID-19 Testing Status System and test application
     * `cd mission3/en/pdf_files`
     * `aws s3 sync . s3://luxxy-covid-testing-system-pdf-en-xxxx`
+
+### Successful Deployment of Luxxy COVID-19 Testing System Result
 
 ![Diagram](https://github.com/aele1401/Cloud/blob/master/Multicloud/Images/luxxy_system.png)
 
