@@ -36,18 +36,14 @@ The configuration details of each machine may be found below.
 | Name     | Function     | IP Address     | Operating System |
 |----------|--------------|----------------|------------------|
 | Jump Box |Gateway       | 10.0.0.7       | Linux            |
-| Web1     |App Server    | 10.1.0.11      | Linux            |
-| Web2     |App Server    | 10.1.0.9       | Linux            |
-| Web3     |App Server    | 10.1.0.12      | Linux            |
+| Web 1    |App Server    | 10.1.0.11      | Linux            |
+| Web 2    |App Server    | 10.1.0.9       | Linux            |
+| Web 3    |App Server    | 10.1.0.12      | Linux            |
 | ELK      |ELK Server    | 192.168.1.100  | Linux            |
 
 ## Access Policies
 
-The machines on the internal network are not exposed to the public internet. 
-
-Only the Jump Box and ELK machines can accept connections from the internet. Access to these machine are only allowed from specific IP addresses that are whitelisted.
-
-Machines within the internal network can only be accessed by web servers.
+The machines on the internal network are not exposed to the public internet. Only the Jump Box and ELK machines can accept connections from the internet. Access to these machine are only allowed from specific IP addresses that are whitelisted. Machines within the internal network can only be accessed by web servers.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -62,10 +58,10 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it automates manual tasks.
 
 The playbook implements the following tasks:
-- Installs docker images (docker.io), python module (python3-pip), and enables docker service.
-- Increases system memory with sysctl module.
+- Installs docker images (docker.io), python module (python3-pip), and enables docker service
+- Increases system memory with sysctl module
 - Downloads and launches docker containers (web & elk)
-- Installs, sets up, and enables filebeat & metricbeat.
+- Installs, sets up, and enables filebeat & metricbeat
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -73,9 +69,9 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web1: 10.1.0.11
-- Web2: 10.1.0.09
-- Web3: 10.1.0.12
+- Web 1: 10.1.0.11
+- Web 2: 10.1.0.09
+- Web 3: 10.1.0.12
 
 The following Beats have been installed on these machines:
 - Filebeat
