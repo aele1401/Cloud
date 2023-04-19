@@ -45,6 +45,14 @@ This project is a migration and deployment of a COVID testing system using infra
         
     * After instance has been created, go to *"Cloud SQL Instance"*
         - Configure SQL network
+        - Navigate to SQL Instance Cluster
+        - In the left menu, select *"Connections"*
+        - Under *"Connections,"* select:
+            * *"Private IP"* 
+            * *"Network: default"*
+            * In *"Authorized networks,"* name will be *"Public Access (Testing Only)"*
+            * *"Network: 0.0.0.0/0"*
+               - *Note: This configuration is set to allow anybody to connect through the web. In a real-word environment, this is not recommended. In production environments, it is strongly recommended to only use private network for database access.*
 
 ![Diagram](https://github.com/aele1401/Cloud/blob/master/Multicloud/Images/creation_complete.png)
 
